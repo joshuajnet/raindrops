@@ -44,9 +44,9 @@ copy
 	transition: opacity 800ms ease-in-out, transform 1000ms ease-in-out, background-color 500ms ease-in-out;
    -moz-transition: opacity 800ms ease-in-out, -moz-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
    -webkit-transition: opacity 800ms ease-in-out, -webkit-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
-   -webkit-box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
-   -moz-box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
-   box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
+   	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
+	box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 }
 
 .active {
@@ -60,7 +60,6 @@ copy
     -webkit-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
 	-moz-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
 	box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
-	border-left: 1px solid #fafafa;
 }
 
 .active .spot-text {
@@ -82,14 +81,29 @@ copy
 	color: transparent;
 }
 
-.active .glow {
+.glow {
 	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-right: -30px;
+	margin-top: -30px;
+	border-radius: 30px;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+	box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+}
+
+.active .glow {
 	top: 20%;
 	right: 20%;
-	display: block;
 	width: 4px;
 	height: 4px;
 	z-index: -44;
+	margin-right: 0;
+	margin-top: 0;
 	border-radius: 2px;
 	background-color: #fff;
 	opacity: .5;
