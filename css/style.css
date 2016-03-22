@@ -41,13 +41,14 @@ copy
 	z-index: 10;
 	position: absolute;
 	opacity: 0;
-	transition: opacity 800ms ease-in-out, transform 1000ms ease-in-out, background-color 500ms ease-in-out;
-   -moz-transition: opacity 800ms ease-in-out, -moz-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
-   -webkit-transition: opacity 800ms ease-in-out, -webkit-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
+	transition: opacity 800ms ease-in-out, transform 1000ms ease-in-out;
+   -moz-transition: opacity 800ms ease-in-out, -moz-transform 1000ms ease-in-out;
+   -webkit-transition: opacity 800ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 	box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 	border-left: 1px solid #fff;
+	border-righ: 1px solid #4C7299;
 }
 
 .active {
@@ -57,7 +58,6 @@ copy
     -o-transform: scale(.5);
     -ms-transform: scale(.5);
     transform: scale(.5);
-    background-color: #96CBFF;
     -webkit-box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
 	-moz-box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
 	box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
