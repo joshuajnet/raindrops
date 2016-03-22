@@ -34,32 +34,33 @@ copy
 }
 
 .raindrop {
-	width: 30px;
-	height: 30px;
+	width: 80px;
+	height: 80px;
 	background-color: #4C7299;
-	border-radius: 15px;
+	border-radius: 40px;
 	z-index: 10;
 	position: absolute;
 	opacity: 0;
 	transition: opacity 800ms ease-in-out, transform 1000ms ease-in-out, background-color 500ms ease-in-out;
    -moz-transition: opacity 800ms ease-in-out, -moz-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
    -webkit-transition: opacity 800ms ease-in-out, -webkit-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
-   	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
 	box-shadow: 0px 3px 15px 0px rgba(255,255,255,1), inset 0px 3px 15px 0px rgba(255,255,255,1);
+	border-left: 1px solid #fff;
 }
 
 .active {
 	opacity: .7 !important;
-	-moz-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+	-moz-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -o-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
     background-color: #96CBFF;
-    -webkit-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
-	-moz-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
-	box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
+    -webkit-box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
+	-moz-box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
+	box-shadow: -3px 3px 40px 0px rgba(76,114,153,1),3px -3px 40px 0px rgba(255,255,255,1), inset -3px 3px 40px 0px rgba(255,255,255,1), inset 3px -3px 40px 0px rgba(76,114,153,1);
 }
 
 .active .spot-text {
@@ -69,13 +70,12 @@ copy
     width: 100%;
     min-height: 100%;
     text-align: center;
-    font-size: 8px;
-    line-height: 8px;
-    margin-top: -4px;
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: -11px;
     color: #fff;
     font-weight: 900;
-    font-family: 'Lato', arial, sans-serif;
-}
+    font-family: 'Lato', arial, sans-serif;}
 
 .spot-text {
 	color: transparent;
@@ -85,11 +85,11 @@ copy
 	position: absolute;
 	top: 50%;
 	right: 50%;
-	margin-right: -30px;
-	margin-top: -30px;
-	border-radius: 30px;
-	width: 60px;
-	height: 60px;
+	margin-right: -80px;
+	margin-top: -80px;
+	border-radius: 80px;
+	width: 160px;
+	height: 160px;
 	background-color: transparent;
 	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
@@ -99,12 +99,12 @@ copy
 .active .glow {
 	top: 20%;
 	right: 20%;
-	width: 4px;
-	height: 4px;
+	width: 10px;
+	height: 10px;
 	z-index: -44;
 	margin-right: 0;
 	margin-top: 0;
-	border-radius: 2px;
+	border-radius: 5px;
 	background-color: #fff;
 	opacity: .5;
 	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
