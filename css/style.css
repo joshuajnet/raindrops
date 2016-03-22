@@ -1,0 +1,99 @@
+#water, #background, #raindrops { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 20;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#water {
+	background: url('../images/water.gif') repeat;
+	opacity: .5;
+}
+
+#raindrops {
+	z-index: 30;
+}
+
+#background {
+    background-size: auto; 
+    z-index: 10;
+    background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(left, #1e5799 0%, #ffffff 50%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #1e5799 0%,#ffffff 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #1e5799 0%,#ffffff 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+copy
+}
+
+.raindrop {
+	width: 30px;
+	height: 30px;
+	background-color: #4C7299;
+	border-radius: 15px;
+	z-index: 10;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 800ms ease-in-out, transform 1000ms ease-in-out, background-color 500ms ease-in-out;
+   -moz-transition: opacity 800ms ease-in-out, -moz-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
+   -webkit-transition: opacity 800ms ease-in-out, -webkit-transform 1000ms ease-in-out, background-color 500ms ease-in-out;
+   -webkit-box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
+   -moz-box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
+   box-shadow: 0px 0px 20px 3px rgba(76,114,153,1);
+}
+
+.active {
+	opacity: .7 !important;
+	-moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    background-color: #96CBFF;
+    -webkit-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
+	-moz-box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
+	box-shadow: -3px 3px 15px 0px rgba(76,114,153,1),3px -3px 15px 0px rgba(255,255,255,1), inset -3px 3px 15px 0px rgba(255,255,255,1), inset 3px -3px 15px 0px rgba(76,114,153,1);
+	border-left: 1px solid #fafafa;
+}
+
+.active .spot-text {
+	position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    font-size: 8px;
+    line-height: 8px;
+    margin-top: -4px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Lato', arial, sans-serif;
+}
+
+.spot-text {
+	color: transparent;
+}
+
+.active .glow {
+	position: absolute;
+	top: 20%;
+	right: 20%;
+	display: block;
+	width: 4px;
+	height: 4px;
+	z-index: -44;
+	border-radius: 2px;
+	background-color: #fff;
+	opacity: .5;
+	-webkit-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+	box-shadow: 0px 3px 15px 0px rgba(255,255,255,1);
+}
