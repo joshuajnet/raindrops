@@ -1,2 +1,2 @@
 # raindrops
-A raindrops effect with CSS3 and jQuery.
+A random raindrops effect with CSS3 animations and jQuery.
