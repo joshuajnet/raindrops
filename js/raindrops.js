@@ -20,6 +20,9 @@ $(document).ready(function() {
 		    }).addClass('active').delay(1500).queue(function(){
 				Posdiv.removeClass('active').dequeue();
 			});
+
+		    
+	    }, rand);
 	   
     }
       
